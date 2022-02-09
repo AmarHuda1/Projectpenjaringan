@@ -1,0 +1,74 @@
+.container {
+    display: grid;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    box-sizing: border-box;
+    grid-template-columns: 0.6fr 0.9fr 0.5fr 0.4fr 0.1fr 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 'st st nav1 nav2 nav2 nav3' 'pt pt pt pt sb sb' 'pm mc mc mc sb sb' 'pm mc mc mc ads ads' 'pm mci mci mci ads ads' 'pm mci mci mci oth oth' 'pm mci mci mci oth oth' 'fo fo fo fo fo fo';
+}
+
+div {
+    margin: 1px;
+}
+
+.ST {
+    grid-area: st;
+    background-color: #fdd633;
+}
+
+.Nav1 {
+    grid-area: nav1;
+    background-color: #f6c0cb;
+}
+
+.Nav2 {
+    grid-area: nav2;
+    background-color: #f6c0cb;
+}
+
+.Nav3 {
+    grid-area: nav3;
+    background-color: #f6c0cb;
+}
+
+.PT {
+    grid-area: pt;
+    background-color: #afd8e5;
+}
+
+.SB {
+    grid-area: sb;
+    background-color: #f6a94b;
+}
+
+.PM {
+    grid-area: pm;
+    background-color: #97ed94;
+}
+
+.MC {
+    grid-area: mc;
+    background-color: #d3d3d3;
+}
+
+.MCI {
+    grid-area: mci;
+    background-color: #fff837;
+}
+
+.ads {
+    grid-area: ads;
+    background-color: #3a7e11;
+}
+
+.Other {
+    grid-area: oth;
+    background-color: #dd5ff9;
+}
+
+.footer {
+    grid-area: fo;
+    background-color: #a08980;
+}
